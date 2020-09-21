@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Step 5</title>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="js/keyboard/keyboard.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="js/keyboard/keyboard.css">
+</head>
+
+<body>
+  <main class="main-contact bg-4 step-6 container">
+    <div>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+
+      <div class="product-img">
+        <img src="img/product.png" alt="">
+      </div>
+    </div>
+
+    <form action="step_7.html" method="get" class="container">
+      <div class="keyboard">
+
+        <p class="text">
+          {{EN: Thank you for participating!||PL: Dziękujemy za udział!}}
+        </p>
+
+        <div class="form-row">
+          <input type="email" id="email" name="email" class="email-input"
+            placeholder="{{EN: Your email||PL: adresu e-mail}}">
+        </div>
+
+        <p class="text small">
+          {{EN: Please enter some information if you wish to receive further information.||PL: Poprosimy o wpisanie adresu e-mail, aby otrzymać próbkę.}}
+        </p>
+
+        <div class="btns">
+          <label class="btn small disabled" id="emailSubmitLabel">
+            <input type="submit" id="emailSubmit" disabled>
+
+            {{EN: done||PL: KONIEC}}
+          </label>
+        </div>
+    </form>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  <script src="js/keyboard/jquery.keyboard.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
