@@ -12,69 +12,65 @@
 
 <body>
   <main class="main-contact bg-5 step-7 container">
-    <div class="grid-position">
-      <div class="grid-position--top">
-        <div class="logo">
-          <img src="img/logo.png" alt="">
+    <div>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+
+      <p class="text">
+        {{EN: Dzięki za udział!||PL: Dzięki za udział!}}
+      </p>
+
+      <form action="step_8.html" method="get" class="container">
+        <div class="checkboxes">
+          <div class="wrap-checkbox">
+            <p class="big">
+              {{EN: Prosimy potwierdzić nasz <span class="terms terms-btn">regulamin</span> i <span class="terms policy-btn">politykę prywatności</span>||PL: Prosimy potwierdzić nasz <span class="terms terms-btn">regulamin</span> i <span class="terms policy-btn">politykę prywatności</span>}}
+            </p>
+
+            <div class="wrap-checkbox">
+              <input type="checkbox" name="checkbox" class="checkbox" id="terms">
+              <label for="terms"></label>
+            </div>
+          </div>
+
+          <div class="wrap-checkbox">
+            <p class="big">
+              {{EN: Proszę potwierdzić, że wyrażają Państwo zgodę na otrzymywanie informacji marketingowych o ofertach, nowościach i wydarzeniach Parfums Christian Dior za pośrednictwem poczty elektronicznej.&#xA;&#xA;||PL: Proszę potwierdzić, że wyrażają Państwo zgodę na otrzymywanie informacji marketingowych o ofertach, nowościach i wydarzeniach Parfums Christian Dior za pośrednictwem poczty elektronicznej.&#xA;&#xA;}}
+            </p>
+
+            <div class="wrap-checkbox">
+              <input type="checkbox" name="news" class="checkbox" id="news">
+              <label for="news"></label>
+            </div>
+          </div>
         </div>
 
-        <p class="text">
-          {{EN: Dzięki za udział!||PL: Dzięki za udział!}}
-        </p>
-      </div>
+        <div class="btns full">
+          <label class="btn small-text disabled" id="termsSubmitLabel">
+            <input type="submit" id="termsSubmit" disabled>
+            {{EN: OTRZYMAJ PRÓBKĘ||PL: OTRZYMAJ PRÓBKĘ}}
+          </label>
+        </div>
 
-      <div class="grid-position--bottom">
-        <form action="step_8.html" method="get" class="container">
-          <div class="checkboxes">
-            <div class="wrap-checkbox">
-              <p class="big">
-                {{EN: Prosimy potwierdzić nasz <span class="terms terms-btn">regulamin</span> i <span class="terms policy-btn">politykę prywatności</span>||PL: Prosimy potwierdzić nasz <span class="terms terms-btn">regulamin</span> i <span class="terms policy-btn">politykę prywatności</span>}}
-              </p>
+        <div class="wrap-info hide-desktop">
+          <p class="text-center">
+            <span class="text-info terms information-provided">{{EN: Informacje podane||PL: Informacje podane}}</span>
+          </p>
+        </div>
 
-              <div class="wrap-checkbox">
-                <input type="checkbox" name="checkbox" class="checkbox" id="terms">
-                <label for="terms"></label>
-              </div>
-            </div>
-
-            <div class="wrap-checkbox">
-              <p class="big">
-                {{EN: Proszę potwierdzić, że wyrażają Państwo zgodę na otrzymywanie informacji marketingowych o ofertach, nowościach i wydarzeniach Parfums Christian Dior za pośrednictwem poczty elektronicznej.&#xA;&#xA;||PL: Proszę potwierdzić, że wyrażają Państwo zgodę na otrzymywanie informacji marketingowych o ofertach, nowościach i wydarzeniach Parfums Christian Dior za pośrednictwem poczty elektronicznej.&#xA;&#xA;}}
-              </p>
-
-              <div class="wrap-checkbox">
-                <input type="checkbox" name="news" class="checkbox" id="news">
-                <label for="news"></label>
-              </div>
-            </div>
-          </div>
-
-          <div class="btns full">
-            <label class="btn small-text disabled" id="termsSubmitLabel">
-              <input type="submit" id="termsSubmit" disabled>
-              {{EN: OTRZYMAJ PRÓBKĘ||PL: OTRZYMAJ PRÓBKĘ}}
-            </label>
-          </div>
-
-          <div class="wrap-info hide-desktop">
-            <p class="text-center">
-              <span class="text-info terms information-provided">{{EN: Informacje podane||PL: Informacje podane}}</span>
-            </p>
-          </div>
-
-          <div class="wrap-info hide-mobile">
-            <p class="info">
-              {{EN: W Odore Limited bardzo poważnie podchodzimy do Twojej prywatności i bezpieczeństwa Twoich danych. Będziemy wykorzystywać Twoje dane osobowe wyłącznie zgodnie z naszą Polityką Prywatności i tylko w razie potrzeby, umożliwienia nam świadczenia usług i produktów, o które zostaliśmy poproszeni; lub w celu skontaktowania się z Tobą w celu podania szczegółów informacji, które naszym zdaniem mogą być dla Ciebie istotne lub mogą Cię zainteresować w odniesieniu do oferowanych przez nas usług i produktów lub&#xA;w celu poinformowania o nowych usługach lub produktach, które my, tj. nasza marka, uważamy za warte uwagi.&#xA;&#xA;&#xA;&#xA; ||PL: W Odore Limited bardzo poważnie podchodzimy do Twojej prywatności i bezpieczeństwa Twoich danych. Będziemy wykorzystywać Twoje dane osobowe wyłącznie zgodnie z naszą Polityką Prywatności i tylko w razie potrzeby, umożliwienia nam świadczenia usług i produktów, o które zostaliśmy poproszeni; lub w celu skontaktowania się z Tobą w celu podania szczegółów informacji, które naszym zdaniem mogą być dla Ciebie istotne lub mogą Cię zainteresować w odniesieniu do oferowanych przez nas usług i produktów lub&#xA;w celu poinformowania o nowych usługach lub produktach, które my, tj. nasza marka, uważamy za warte uwagi.&#xA;&#xA;&#xA;&#xA;}}
-            </p>
-            <p class="info">
-              {{EN: Informacje podane powyżej są przeznaczone dla upoważnionego personelu Parfums Christian Dior, który jest administratorem przetwarzania danych. Państwa dane są wykorzystywane do zarządzania Państwa doświadczeniem Dior, do wysyłania Państwu quizu z wynikami oraz za Państwa zgodą do wysyłania Państwu informacji o ofertach, nowościach i wydarzeniach Parfums Christian Dior. Aby uzyskać więcej informacji na temat Państwa danych osobowych i Państwa praw, prosimy o zapoznanie się z naszą polityką prywatności lub kontakt z naszym inspektorem ochrony danych osobowych (DPO) pod adresem dpo_international@diormail.com.&#xA;&#xA;||PL: Informacje podane powyżej są przeznaczone dla upoważnionego personelu Parfums Christian Dior, który jest administratorem przetwarzania danych. Państwa dane są wykorzystywane do zarządzania Państwa doświadczeniem Dior, do wysyłania Państwu quizu z wynikami oraz za Państwa zgodą do wysyłania Państwu informacji o ofertach, nowościach i wydarzeniach Parfums Christian Dior. Aby uzyskać więcej informacji na temat Państwa danych osobowych i Państwa praw, prosimy o zapoznanie się z naszą polityką prywatności lub kontakt z naszym inspektorem ochrony danych osobowych (DPO) pod adresem dpo_france@diormail.com.&#xA;&#xA;}}
-            </p>
-          </div>
-        </form>
-      </div>
+        <div class="wrap-info hide-mobile">
+          <p class="info">
+            {{EN: W Odore Limited bardzo poważnie podchodzimy do Twojej prywatności i bezpieczeństwa Twoich danych. Będziemy wykorzystywać Twoje dane osobowe wyłącznie zgodnie z naszą Polityką Prywatności i tylko w razie potrzeby, umożliwienia nam świadczenia usług i produktów, o które zostaliśmy poproszeni; lub w celu skontaktowania się z Tobą w celu podania szczegółów informacji, które naszym zdaniem mogą być dla Ciebie istotne lub mogą Cię zainteresować w odniesieniu do oferowanych przez nas usług i produktów lub&#xA;w celu poinformowania o nowych usługach lub produktach, które my, tj. nasza marka, uważamy za warte uwagi.&#xA;&#xA;&#xA;&#xA; ||PL: W Odore Limited bardzo poważnie podchodzimy do Twojej prywatności i bezpieczeństwa Twoich danych. Będziemy wykorzystywać Twoje dane osobowe wyłącznie zgodnie z naszą Polityką Prywatności i tylko w razie potrzeby, umożliwienia nam świadczenia usług i produktów, o które zostaliśmy poproszeni; lub w celu skontaktowania się z Tobą w celu podania szczegółów informacji, które naszym zdaniem mogą być dla Ciebie istotne lub mogą Cię zainteresować w odniesieniu do oferowanych przez nas usług i produktów lub&#xA;w celu poinformowania o nowych usługach lub produktach, które my, tj. nasza marka, uważamy za warte uwagi.&#xA;&#xA;&#xA;&#xA;}}
+          </p>
+          <p class="info">
+            {{EN: Informacje podane powyżej są przeznaczone dla upoważnionego personelu Parfums Christian Dior, który jest administratorem przetwarzania danych. Państwa dane są wykorzystywane do zarządzania Państwa doświadczeniem Dior, do wysyłania Państwu quizu z wynikami oraz za Państwa zgodą do wysyłania Państwu informacji o ofertach, nowościach i wydarzeniach Parfums Christian Dior. Aby uzyskać więcej informacji na temat Państwa danych osobowych i Państwa praw, prosimy o zapoznanie się z naszą polityką prywatności lub kontakt z naszym inspektorem ochrony danych osobowych (DPO) pod adresem dpo_international@diormail.com.&#xA;&#xA;||PL: Informacje podane powyżej są przeznaczone dla upoważnionego personelu Parfums Christian Dior, który jest administratorem przetwarzania danych. Państwa dane są wykorzystywane do zarządzania Państwa doświadczeniem Dior, do wysyłania Państwu quizu z wynikami oraz za Państwa zgodą do wysyłania Państwu informacji o ofertach, nowościach i wydarzeniach Parfums Christian Dior. Aby uzyskać więcej informacji na temat Państwa danych osobowych i Państwa praw, prosimy o zapoznanie się z naszą polityką prywatności lub kontakt z naszym inspektorem ochrony danych osobowych (DPO) pod adresem dpo_france@diormail.com.&#xA;&#xA;}}
+          </p>
+        </div>
+      </form>
     </div>
 
-    <div class="modal-wrap" id="modal-terms"Dziękujemy za udział!>
+    <div class="modal-wrap" id="modal-terms" Dziękujemy za udział!>
       <div class="modal">
         <div class="modal__header">
           {{EN: Terms of Use}}
