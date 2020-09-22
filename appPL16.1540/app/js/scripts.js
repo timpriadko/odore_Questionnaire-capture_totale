@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   /* custom keyboard layouts */
   var normalLayout = [
-    '` 1 2 3 4 5 6 7 8 9 0 -',
+    '1 2 3 4 5 6 7 8 9 0 -',
     '@ q w e r t y u i o p',
     'a s d f g h j k l {bksp}',
     '~ z x c v b n m . \' {accept}',
@@ -38,7 +38,6 @@ $(document).ready(function () {
   //   '{alt} {space} {alt} {cancel}'
   // ]
   /* custom keyboard layouts */
-
 
   if (window.innerWidth > 560) {
     // init https://mottie.github.io/Keyboard/
@@ -155,6 +154,17 @@ $(document).ready(function () {
     policyModal.removeClass('show');
     modalInformation.removeClass('show');
   });
+
+  document.body.addEventListener('click', function (event) {
+    var path = event.path || (event.composedPath && event.composedPath());
+
+    console.log(path.includes(document.querySelector('.modal')));
+    // if ($('.modal-wrap').hasClass('show')) {
+    // if (!path.includes(document.querySelector('.modal'))) {
+    //   console.log(document.querySelector('.modal'))
+    // }
+    // }
+  })
 
   /* end modal */
 });

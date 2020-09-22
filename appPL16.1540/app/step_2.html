@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="google" content="notranslate" />
+  <meta name="google" content="notranslate"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Step 1</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -11,8 +11,9 @@
 </head>
 
 <body>
-  <main class="main-contact bg-2 container step-2">
-    <div>
+<main class="main-contact bg-2 container step-2">
+  <div class="grid-position">
+    <div class="grid-position--top">
       <div class="logo">
         <img src="img/logo.png" alt="">
       </div>
@@ -24,10 +25,12 @@
         {{EN: Ile procent składników w formule Capture Totale Super Potent Serum jest pochodzenia naturalnego?||PL: Ile
         procent składników w formule Capture Totale Super Potent Serum jest pochodzenia naturalnego?}}
       </p>
+    </div>
 
+    <div class="grid-position--bottom">
       <form action="step_3.html" method="get">
         <input type="hidden" name="question"
-          value="How much of Capture Totale Firming & Wrinkle-correcting Creme’s ingredients are of natural origin 1?">
+               value="How much of Capture Totale Firming & Wrinkle-correcting Creme’s ingredients are of natural origin 1?">
         <div class="btns">
           <label class="btn">
             <input type="submit" name="answer" value="91%" hidden>
@@ -55,11 +58,12 @@
         </div>
       </form>
     </div>
-  </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-  <script src="js/keyboard/jquery.keyboard.min.js"></script>
-  <script src="js/scripts.min.js"></script>
+  </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="js/keyboard/jquery.keyboard.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
