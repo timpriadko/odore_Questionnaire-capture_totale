@@ -39,38 +39,39 @@ $(document).ready(function () {
   // ]
   /* custom keyboard layouts */
 
-  // init https://mottie.github.io/Keyboard/
-  $('#first_name, #last_name').keyboard({
-    layout: 'custom',
-    position: {
-      of: '#email',
-      my: 'center top',
-      at: 'center top',
-      // used when "usePreview" is false
-      at2: 'center bottom'
-    },
-    usePreview: false,
-    customLayout: {
-      normal: normalLayout,
-      // shift: shiftLayout,
-      // alt: altLayout,
-      // 'alt-shift': altShitlayout,
-    },
-    visible: function (e, keyboard) {
-      keyboard.$keyboard.find('.ui-keyboard-accept').text('Enter')
-    },
-    autoAccept: true,
-    appendTo: $('.keyboard'),
-  });
+  if (window.innerWidth > 560) {
+    // init https://mottie.github.io/Keyboard/
+    $('#first_name, #last_name').keyboard({
+      layout: 'custom',
+      position: {
+        // null = attach to input/textarea;
+        // use $(sel) to attach elsewhere
+        of: '#email',
+        my: 'center top',
+        // at: 'center top',
+        // used when "usePreview" is false
+        at2: 'center bottom'
+      },
+      usePreview: false,
+      customLayout: {
+        normal: normalLayout,
+        // shift: shiftLayout,
+        // alt: altLayout,
+        // 'alt-shift': altShitlayout,
+      },
+      visible: function (e, keyboard) {
+        keyboard.$keyboard.find('.ui-keyboard-accept').text('Enter')
+      },
+      autoAccept: true,
+      appendTo: $('.keyboard'),
+    });
 
-  if ($(window).width() > 1024) {
     $('#email').keyboard({
       layout: 'custom',
       position: {
         of: null,
         my: 'center top',
-        at: 'center top',
-        // used when "usePreview" is false
+        // at: 'center top',
         at2: 'center bottom'
       },
       usePreview: false,
@@ -99,11 +100,11 @@ $(document).ready(function () {
   var emailSubmit = $('#emailSubmit');
 
   email.change(function () {
-    if (isEmail(email.val())) {
+    if (isEmail(email.val()) || email.val() === '') {
       emailSubmit.removeAttr('disabled');
       emailSubmitLabel.removeClass('disabled');
     } else {
-      emailSubmit.attr('disabled');
+      emailSubmit.attr('disabled', true);
       emailSubmitLabel.addClass('disabled');
     }
   });
@@ -130,8 +131,10 @@ $(document).ready(function () {
   /* setup modal */
   var termsBtn = $('.terms-btn');
   var policyBtn = $('.policy-btn');
+  var informationProvided = $('.information-provided');
   var termsModal = $('#modal-terms');
   var policyModal = $('#modal-policy');
+  var modalInformation = $('#modal-information');
   var closeBtn = $('.ui-close-modal');
 
   termsBtn.on('click', function () {
@@ -142,17 +145,22 @@ $(document).ready(function () {
     policyModal.addClass('show');
   });
 
+  informationProvided.on('click', function () {
+    modalInformation.addClass('show');
+  });
+
   closeBtn.on('click', function () {
     termsModal.removeClass('show');
     policyModal.removeClass('show');
+    modalInformation.removeClass('show');
   });
 
   // close modal by clicking outside the modal window
   $('.modal-wrap').click(function (e) {
     if (e.target === $('.modal-wrap.show')[0]) {
-      termsModal.removeClass('show');
-      policyModal.removeClass('show');
+      $('.modal-wrap.show').removeClass('show');
     }
   })
+
   /* end modal */
 });

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Step 5</title>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="js/keyboard/keyboard.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="js/keyboard/keyboard.css">
+</head>
+
+<body>
+  <main class="main-contact bg-4 step-6 container">
+    <div class="grid-position">
+      <div class="grid-position--top">
+        <div class="logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <p class="text">
+          {{EN: Thank you for participating! }}
+        </p>
+      </div>
+
+      <div class="grid-position--bottom">
+        <form action="step_7.html" method="get" class="container">
+          <div class="keyboard">
+            <div class="form-row">
+              <input type="email" id="email" name="email" class="email-input"
+                     placeholder="{{EN: Your email}}">
+            </div>
+
+            <p class="text small">
+              {{EN: Please enter some information if you wish to receive further information. }}
+            </p>
+
+            <div class="btns full">
+              <label class="btn small-text" id="emailSubmitLabel">
+                <input type="submit" id="emailSubmit">
+
+                {{EN: done}}
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  <script src="js/keyboard/jquery.keyboard.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

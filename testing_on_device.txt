@@ -1,0 +1,10 @@
+Чтобы проверить:
+1. открыть https://odore.ml/#/
+email: admin@example.com
+password: testtest1234
+
+2. открыть https://odore.ml/#/campaigns/74b8c818-4895-483a-a9a9-30bc1f839d3c
+3. нажать Edit campaign
+4. проклацать до экрана Interface и заменить нужный шаблон
+5. ребутнуть (на сайте https://odore.ml/#/devices/37457270-8ef8-4fac-a6ad-bdb2b43a796c , или в розетке)
+(TODO: ну можешь там забабахать кнопку которая будет делать location.href="/devices/{id}/" и включать ее в скрипте где-нибудь (например по ИД девайса == 37457270-8ef8-4fac-a6ad-bdb2b43a796c , кнопку fixed'ом собачить)
